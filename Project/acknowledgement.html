@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Acknowledgment</title>
+    <link rel="stylesheet" href="acknowledgement.css">
+</head>
+<body>
+
+    <div class="ack-container">
+        <h2 class="success-message">Customer Registration Successful</h2>
+        <p><strong>Customer ID:</strong> <span id="customerId"></span></p>
+        <p><strong>Customer Name:</strong> <span id="customerName"></span></p>
+        <a href="Home.html">Go to Home</a>
+    </div>
+
+    <script>
+        document.getElementById("customerId").textContent = localStorage.getItem("customerId");
+        document.getElementById("customerName").textContent = localStorage.getItem("customerName");
+    </script>
+
+</body>
+</html>

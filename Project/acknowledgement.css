@@ -1,0 +1,23 @@
+.ack-container {
+    width: 50%;
+    margin: 10% auto;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.success-message {
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}

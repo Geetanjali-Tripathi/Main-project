@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/background.jpg') no-repeat center center/cover;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+/* Form Styling */
+.form-container {
+    width: 40%;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Mobile Input Field */
+.mobile-input {
+    display: flex;
+    gap: 10px;
+}
+
+.mobile-input select {
+    width: 30%;
+}
+
+/* Buttons */
+.buttons {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #43b0f1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #057dcd;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+}
+
+button[type="reset"]:hover {
+    background-color: #b02a37;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        justify-content: center;
+        padding-right: 0;
+    }
+    .form-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 95%;
+    }
+    .mobile-input {
+        flex-direction: column;
+    }
+    .mobile-input select {
+        width: 100%;
+    }
+}
